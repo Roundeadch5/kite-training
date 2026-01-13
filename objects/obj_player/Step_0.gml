@@ -24,13 +24,15 @@ if (mouse_check_button_pressed(mb_left) and (canattack == true)){
 #endregion
 
 #region //Attacking
-if ((mouse_check_button_pressed(mb_left)) and (point_distance(self.x, self.y, obj_enemy.x, obj_enemy.y) <= 128) and (canattack == true)){
-	canmove = false;
-	canattack = false;
-	instance_create_depth(self.x, self.y, -1, obj_bullet);
-	alarm[0] = 10/global.attackspeed;
-	alarm[1] = 60/global.attackspeed;
-} else if ((mouse_check_button_pressed(mb_left)) and (point_distance(self.x, self.y, obj_enemy.x, obj_enemy.y)) > 128){
-	move_towards_point(obj_enemy.x, obj_enemy.y, global.attackspeed);
+if (global.kitestyle == false){
+	if ((mouse_check_button_pressed(mb_left)) and (point_distance(self.x, self.y, obj_enemy.x, obj_enemy.y) <= 128) and (canattack == true)){
+		canmove = false;
+		canattack = false;
+		instance_create_depth(self.x, self.y, -1, obj_bullet);
+		alarm[0] = 10/global.attackspeed;
+		alarm[1] = 60/global.attackspeed;
+	} else if ((mouse_check_button_pressed(mb_left)) and (point_distance(self.x, self.y, obj_enemy.x, obj_enemy.y)) > 128){
+		move_towards_point(obj_enemy.x, obj_enemy.y, global.attackspeed);
+	}
 }
 #endregion

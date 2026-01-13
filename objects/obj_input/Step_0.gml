@@ -15,10 +15,10 @@ if (writeable == true){
 
 #region //Choosing kite style
 if keyboard_check_pressed(vk_right){
-	global.kitestyle = true;
+	global.kitestyle = false;
 }
 
 if keyboard_check_pressed(vk_left){
-	global.kitestyle = false;
+	global.kitestyle = true;
 }
 #endregion
