@@ -1,0 +1,1 @@
+global.attackspeed = 3;
