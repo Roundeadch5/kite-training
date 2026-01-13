@@ -1,0 +1,1 @@
+click_times = ds_list_create();
