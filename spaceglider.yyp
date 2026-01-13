@@ -22,6 +22,8 @@
   },
   "name":"spaceglider",
   "resources":[
+    {"id":{"name":"obj_box1","path":"objects/obj_box1/obj_box1.yy",},},
+    {"id":{"name":"obj_box2","path":"objects/obj_box2/obj_box2.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_cpstracker","path":"objects/obj_cpstracker/obj_cpstracker.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
@@ -29,6 +31,8 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"game_room","path":"rooms/game_room/game_room.yy",},},
     {"id":{"name":"startup","path":"rooms/startup/startup.yy",},},
+    {"id":{"name":"spr_box1","path":"sprites/spr_box1/spr_box1.yy",},},
+    {"id":{"name":"spr_box2","path":"sprites/spr_box2/spr_box2.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
